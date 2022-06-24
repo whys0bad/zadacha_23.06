@@ -1,0 +1,17 @@
+using System;				
+public class Program
+{
+	public static void Main()
+	{
+		for (int i = 1; i<101; i++){
+			int good_chisla = 0;
+			for (int n = 1 ; n<i+1; n++)
+			{
+				if (i % n == 0)
+				good_chisla +=1;
+			}
+		if (good_chisla % 2 == 1){
+			Console.WriteLine("Подходит под условие: "+ i);}
+		}
+	}
+}
